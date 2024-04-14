@@ -20,4 +20,5 @@ public:
     Person(std::string name_i, int age_i, std::string race_i);
     friend std::ostream &operator<<(std::ostream &os, const Person &p);
     static int get_count();
+    
 };
