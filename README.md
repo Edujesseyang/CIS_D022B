@@ -29,8 +29,9 @@ The CISD022B course focuses on several key areas, including but not limited to:
 Here, I'll track my progress through the course, noting any particular challenges I've faced and how I've addressed them.
 
 - [x] Week 1: Class basic
-- [ ] Week 2: Deep Dive into Class
-- [ ] More weeks to come...
+- [x] Week 2: Deep Dive into Class
+- [x] Week 3: inheritance and polymorphism.
+- [ ] Week 3: More deep into inheritance and polymorphism.
 
 ## Reflections
 
