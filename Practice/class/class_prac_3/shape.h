@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 using std::string;
+using std::cout;
 class Shape
 {
 protected:
@@ -13,9 +14,34 @@ protected:
 
 public:
     Shape() : _name("N/A"), _color("N/A"){};
-    Shape(string name, string color) :_name(name), _color(color) {};
+    Shape(string name, string color) : _name(name), _color(color){};
+    bool setName(string name)
+    {
+        if (name != "")
+        {
+            Shape::_name = name;
+            return true;
+        }
+        return false;
+    }
+    bool setColor(string color)
+    {
+        if (color != "")
+        {
+           Shape:: _color = color;
+            return true;
+        }
+        return false;
+    }
+
+    string getName() { return _name; };
+    string getColor() { return _color; };
     double getSize() { return _size; };
     virtual void calcSize() = 0;
+    virtual void printInfo() 
+    {
+        cout << "Name:\n" << _name << "\nColor:\n" << _color << '\n';
+    };
 };
 
 #endif // SHAPE_H
