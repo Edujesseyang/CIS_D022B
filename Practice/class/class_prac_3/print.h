@@ -26,8 +26,8 @@ public:
     {
         Rectangle::printInfo();
         cout << "Artist:\n"
-             << _printer << "\nTile:\n"
-             << _title << '\n';
+             << Print::_printer << "\nTile:\n"
+             << Print::_title << '\n';
     }
 };
 

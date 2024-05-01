@@ -47,7 +47,5 @@ int main()
     my_print.printInfo();
 
 
-  
-
     return 0;
 }

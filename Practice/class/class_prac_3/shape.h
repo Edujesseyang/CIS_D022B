@@ -40,7 +40,7 @@ public:
     virtual void calcSize() = 0;
     virtual void printInfo() 
     {
-        cout << "Name:\n" << _name << "\nColor:\n" << _color << '\n';
+        cout << "Name:\n" << Shape::_name << "\nColor:\n" << Shape::_color << '\n';
     };
 };
 

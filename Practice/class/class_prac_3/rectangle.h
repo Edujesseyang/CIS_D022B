@@ -27,7 +27,7 @@ public:
     {
         Shape::printInfo();
         cout << "Size:\n"
-             << _height << " * " << _width << "\nArea:\n"
+             << Rectangle::_height << " * " << Rectangle::_width << "\nArea:\n"
              << Shape::_size << '\n';
     };
 };
