@@ -18,7 +18,7 @@ public:
         _position = "N/A";
     };
     Member(string name, string position) : _name(name), _position(position) {}
-    virtual int calcPower() = 0;
+    virtual int calcPower() = 0;  // virtual method. defaulting = 0;
     void printInfo()
     {
         cout << "Name: " << _name << '\n';

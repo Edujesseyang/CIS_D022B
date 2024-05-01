@@ -21,7 +21,7 @@ public:
         _strength = 0;
     }
     Leader(string name, string position, int energy, int strength) : Member(name, position), _energy(energy), _strength(strength) {}
-    int calcPower() override
+    int calcPower() override   // override the virtual method in Member class.
     {
         _power = _strength * _energy;
         return _power;
