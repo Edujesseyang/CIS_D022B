@@ -51,7 +51,9 @@ int main()
                                'f',
                                'g'};
     int max3 = findTheMax(test3);
+    char max3_char = findTheMax(test3);
     cout << "The largest num in the list is : " << max3 << '\n';
+    cout << "The largest num in the list is : " << max3_char << '\n';
 
     return 0;
 }
