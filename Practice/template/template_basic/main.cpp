@@ -55,5 +55,17 @@ int main()
     cout << "The largest num in the list is : " << max3 << '\n';
     cout << "The largest num in the list is : " << max3_char << '\n';
 
+    // test 4
+    // a string type vector
+    cout << '\n';
+    std::vector<std::string> test4 = {
+        "asd",
+        "bfa",
+        "ere",
+        "bgbg",
+        "ewew"};
+    std::string max4 = findTheMax(test4);
+    cout << "The largest num in the list is : " << max4 << '\n';
+
     return 0;
 }
