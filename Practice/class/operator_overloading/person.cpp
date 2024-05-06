@@ -61,12 +61,7 @@ ostream &operator<<(ostream &os, const Person &that)
 
 istream &operator>>(istream &is, Person &that)
 {
-    if(!(is >> that._name >> that._gender >> that._age))
-    {
-        return is;
-    }
-    else
-    {
-        cout << "Wrong inputs\n";
-    }
+    is >> that._name >> that._gender >> that._age;
+
+    return is;
 }
