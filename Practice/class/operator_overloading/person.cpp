@@ -49,6 +49,16 @@ void Person::set(const Person &that)
 {
     set(that._name, that._gender, that._age);
 }
+// single member setters
+void Person::setName(const string &name) { _name = name; }
+void Person::setGender(const string &gender) { _gender = gender; }
+void Person::setAge(int age) { _age = age; }
+
+// getters
+string Person::getInfo() const { return "Name: " + _name + " Gender: " + _gender + " Age: " + _age; }
+string Person::getName() const { return _name; }
+string Person::getGender() const { return _gender; }
+int Person::getAge() const { return _age; }
 
 // operators
 ostream &operator<<(ostream &os, const Person &that)
