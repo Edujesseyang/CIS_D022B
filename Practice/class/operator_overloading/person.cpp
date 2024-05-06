@@ -1,10 +1,7 @@
 #include <iostream>
 #include <string>
 #include "person.h"
-using std::cout;
-using std::istream;
-using std::ostream;
-using std::string;
+using namespace std;
 
 // default constructor
 Person::Person()
@@ -24,14 +21,13 @@ Person::Person(const Person &that)
 }
 
 // assign operator
-Person &Person::operator=(const Person &that)
+Person &Person::operator=(Person that)
 {
-    if (this != &that)
-    {
-        this->_name = that._name;
-        this->_gender = that._gender;
-        this->_age = that._age;
-    }
+
+    this->_name = that._name;
+    this->_gender = that._gender;
+    this->_age = that._age;
+
     return *this;
 }
 
@@ -41,18 +37,17 @@ Person::Person(const string &name, const string &gender, int age)
     set(name, gender, age);
 }
 
-// master setters
+// multi-param setter
 void Person::set(const string &name, const string &gender, int age)
 {
     this->_name = name;
     this->_gender = gender;
     this->_age = age;
 }
+// copy setter
 void Person::set(const Person &that)
 {
-    this->_name = that._name;
-    this->_gender = that._gender;
-    this->_age = that._age;
+    set(that._name, that._gender, that._age);
 }
 
 // operators
@@ -61,10 +56,17 @@ ostream &operator<<(ostream &os, const Person &that)
     os << "Name: " << that._name << '\n';
     os << "Gender: " << that._gender << '\n';
     os << "Age: " << that._age << '\n';
+    return os;
 }
 
-istream &Person::operator>>(istream &is)
+istream &operator>>(istream &is, Person &that)
 {
-
-    is >> _name >> _gender >> _age;
+    if(!(is >> that._name >> that._gender >> that._age))
+    {
+        return is;
+    }
+    else
+    {
+        cout << "Wrong inputs\n";
+    }
 }
