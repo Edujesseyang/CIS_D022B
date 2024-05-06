@@ -6,8 +6,8 @@ using namespace std;
 
 void testCase1()
 {
-    // basic functioning test: 
-    // default constructor, destructor, copy constructor, assign operator, iostream operators, sets. 
+    // basic functioning test:
+    // default constructor, destructor, copy constructor, assign operator, iostream operators, sets.
     cout << "***************** test case 1 *************\n";
     Person person1;
     cout << "default constructor and << operator: \n";
@@ -35,6 +35,16 @@ void testCase1()
     cout << "Enter the person's info: (name gender age):\n";
     cin >> person5;
     cout << person5 << '\n';
+
+    cout << "getter and setter test:\n";
+    Person person6;
+    person6.setName(".setName() Pass");
+    person6.setGender(".setGender() Pass");
+    person6.setAge(99);
+    cout << person6.getName() << '\n';
+    cout << person6.getGender() << '\n';
+    cout << person6.getAge() << '\n';
+    cout << person6.getInfo() << '\n';
 
     cout << "************** test case 1 completed **************\n";
 }

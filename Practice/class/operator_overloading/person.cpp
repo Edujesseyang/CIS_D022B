@@ -55,7 +55,7 @@ void Person::setGender(const string &gender) { _gender = gender; }
 void Person::setAge(int age) { _age = age; }
 
 // getters
-string Person::getInfo() const { return "Name: " + _name + " Gender: " + _gender + " Age: " + _age; }
+string Person::getInfo() const { return "Name: " + _name + " Gender: " + _gender + " Age: " + to_string(_age); }
 string Person::getName() const { return _name; }
 string Person::getGender() const { return _gender; }
 int Person::getAge() const { return _age; }
