@@ -38,13 +38,14 @@ Cat::Cat(const string &name, const int &age, const string &color) : _name(name),
 // .... we can add more with different params order
 
 // setters
+// master setter
 void Cat::set(const std::string &name, const int &age, const std::string &color)
 {
     _name = name;
     _age = age;
     _color = color;
 }
-
+// single member setters
 bool Cat::setName(const std::string &name)
 {
     if (name != "")
@@ -91,7 +92,6 @@ string Cat::getInfo() const
     string result = "Name: " + _name + "\nAge: " + to_string(_age) + "\nColor: " + _color + "\n";
     return result;
 }
-
 string Cat::getName() const
 {
     return _name;
@@ -110,11 +110,13 @@ int Cat::getCount()
 }
 
 // printer
+// stream operator print
 ostream &operator<<(ostream &os, const Cat &that)
 {
     os << "Name:\t " << that._name << "\nAge:\t " << that._age << "\nColor:\t " << that._color << "\n";
     return os;
 }
+// print method
 bool Cat::printInfo() const
 {
     cout << "Cat number " << _count << ": \n";

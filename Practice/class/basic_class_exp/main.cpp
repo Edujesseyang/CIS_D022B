@@ -29,6 +29,8 @@ int main(void)
               << "\nColor: " << cat5.getColor()
               << '\n';
     std::cout << "\n\ncat counts: \n";
+
+    // cat count should be same ouput
     std::cout << "cat1: " << cat1.getCount() << '\n';
     std::cout << "cat2: " << cat2.getCount() << '\n';
     std::cout << "cat3: " << cat3.getCount() << '\n';
