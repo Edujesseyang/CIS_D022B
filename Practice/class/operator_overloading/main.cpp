@@ -79,6 +79,7 @@ void testCase2()
     Student s4;
     s4 = s3; 
     cout << s4; 
+    cout << "************** test case 2 completed **************\n";
 }
 int main()
 {
