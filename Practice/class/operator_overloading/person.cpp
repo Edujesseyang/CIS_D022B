@@ -65,7 +65,7 @@ ostream &operator<<(ostream &os, const Person &that)
 {
     os << "Name: " << that._name << '\n';
     os << "Gender: " << that._gender << '\n';
-    os << "Age: " << that._age << '\n';
+    os << "Age: " << that._age;
     return os;
 }
 

@@ -78,13 +78,11 @@ void testCase2()
     cout << "Try out assign operator\n";
     Student s4;
     s4 = s3; 
-    cout << s4;
-
-    
-
+    cout << s4; 
 }
 int main()
 {
     testCase1();
+    testCase2();
     return 0;
 }
