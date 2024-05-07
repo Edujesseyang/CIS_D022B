@@ -10,7 +10,7 @@ using std::string;
 
 class Person
 {
-private:
+protected:
     string _name;
     string _gender;
     int _age;
