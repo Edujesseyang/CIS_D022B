@@ -28,4 +28,8 @@ public:
 
     // getters
     string get_thesis() const;
+
+    // stream operators
+    friend ostream &operator<<(ostream &os, const Grad &obj);
+    friend istream &operator>>(istream &is, Grad &obj);
 };

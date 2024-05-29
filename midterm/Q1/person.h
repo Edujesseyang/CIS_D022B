@@ -17,7 +17,7 @@ public:
 	Person(const string& name_i, int age_i);
 
 	friend ostream& operator<<(ostream& os, const Person& obj);
-	friend istream& operator>>(istream& os, Person& obj);
+	friend istream& operator>>(istream& is, Person& obj);
 
 	//static functions can access only static members
 	//static in .h only; no "this" in static

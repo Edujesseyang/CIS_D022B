@@ -63,3 +63,28 @@ void Grad::set(const Grad &obj)
     Student::set(obj.get_name(), obj.get_age(), obj.get_major(), obj.get_year());
     set_thesis(obj.get_thesis());
 }
+
+// stream operators
+ostream &operator<<(ostream &os, const Grad &obj)
+{
+    os << "Grad Student's Infomation:\n";
+    os << "Name: " << obj.get_name() << '\n';
+    os << "Age: " << obj.get_age() << '\n';
+    os << "Major: " << obj.get_major() << '\n';
+    os << "Year: " << obj.get_year() << '\n';
+    os << "Thesis: " << obj.get_thesis() << '\n';
+}
+istream &operator>>(istream &is, Grad &obj)
+{
+    Student S;
+    is >> S;
+    obj.set_name(S.get_name());
+    obj.set_age(S.get_age());
+    obj.set_major(S.get_major());
+    obj.set_year(S.get_year());
+    cout << "Enter thesis: ";
+    // cin would read one word only from major; use getline
+    is.ignore(); // when using getline and cin together
+    getline(is, obj.thesis);
+    return is;
+}
