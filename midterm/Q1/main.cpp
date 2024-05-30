@@ -3,7 +3,7 @@
 #include <iterator>
 #include "person.h"
 #include "student.h"
-#include "grad.h"
+#include "Student.h"
 
 using namespace std;
 
@@ -15,20 +15,20 @@ int main(void)
 	while (true)
 	{
 
-		cout << "Enter num of Grad students ( <= 0 to quit): ";
+		cout << "Enter num of Student students ( <= 0 to quit): ";
 		cin >> num;
 		if (num <= 0)
 			break; //exit the while loop
 
-		vector<Grad> pa(num); //no objects yet
-		Grad obj;
+		vector<Student> pa(num); //no objects yet
+		Student obj;
 		for (size_t i = 0; i < num; i++)
 		{
-			cout << "Reading a new Grad student " << endl;
+			cout << "Reading a new Student student " << endl;
 			//p.read();
 			cin >> obj;
 			pa.push_back(obj); //insert at the end of the vector pa
-			Grad p = obj;
+			Student p = obj;
 			pa[i] = obj;
 		}
 
@@ -48,7 +48,7 @@ int main(void)
 		cout << endl;
 
 		//different way to print containers like vector
-		for (Grad obj : pa)
+		for (Student obj : pa)
 		{
 			cout << obj << endl;
 		}
