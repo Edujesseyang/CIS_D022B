@@ -31,7 +31,7 @@ public:
 
     // static counter
     static int count;
-    static int get_count();
+    int get_count();
 };
 
-#endif //ANIMAL_H
+#endif // ANIMAL_H
