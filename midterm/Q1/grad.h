@@ -18,13 +18,13 @@ public:
     Grad(const Grad &obj);            // copy constructor
 
     // other constructors
-    Grad(string name, int age, string major, int year, string thesis);
+    Grad(const string &name_i, int age_i, const string &major_i, int year_i, const string &thesis_i);
 
     // setters
     void set_thesis(const string &thesis_i);
-    void set(const string &name_i, int age_i,
+    virtual void set(const string &name_i, int age_i,
              const string &major_i, int year_i, const string &thesis);
-    void set(const Grad &obj);
+    virtual void set(const Grad &obj);
 
     // getters
     string get_thesis() const;
