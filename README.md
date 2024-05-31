@@ -28,10 +28,13 @@ The CISD022B course focuses on several key areas, including but not limited to:
 
 Here, I'll track my progress through the course, noting any particular challenges I've faced and how I've addressed them.
 
-- [x] Week 1: Class basic
-- [x] Week 2: Deep Dive into Class
-- [x] Week 3: inheritance and polymorphism.
-- [ ] Week 3: More deep into inheritance and polymorphism.
+- [x] Week 1: Class basic.
+- [x] Week 2: Deep Dive into Class.
+- [x] Week 3: Inheritance and polymorphism.
+- [X] Week 4: More deep into inheritance and polymorphism.
+- [x] Week 5: Object-Oriented Programming practice.
+- [x] Week 6: Pointer and passing by reference.
+- [ ] Week 7: 
 
 ## Reflections
 
@@ -41,7 +44,7 @@ Periodic reflections on what I've learned, difficulties encountered, and how my 
 ## Acknowledgements
 
 - Thanks to the CISD022B instructors for the comprehensive course materials and guidance.
-- Shoutout to my peers for their support and collaboration.
+- Shout-out to my peers for their support and collaboration.
 
 ## Contact Information
 
