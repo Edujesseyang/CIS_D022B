@@ -27,7 +27,7 @@ void tester(int input, int output)
         {
             std::cout << "Actual output:      " << output << '\n';
             std::cout << "Test result:        ";
-            std::cout << "\033[31m" << "fail" << "\033[0m" << '\n';
+            std::cout << "\033[31m" << "Fail" << "\033[0m" << '\n';
         }
     }
     else
@@ -44,7 +44,7 @@ void tester(int input, int output)
         }
         else
         {
-            std::cout << "\033[31m" << "fail" << "\033[0m" << '\n';
+            std::cout << "\033[31m" << "Fail" << "\033[0m" << '\n';
         }
     }
 
