@@ -1,0 +1,141 @@
+Final Exam 30 (points)
+
+Submit your .h, .cpp files only whether you use a desktop compiler or an online compiler.
+Submit a screenshot of the output or copy and paste the output as text to a text file. 
+If you use an online compiler, submit also the links, and do not change the code after the due date and time.
+
+Q1: 20 points
+=============
+In Q1:
+Do not add new functions unless used internally by the functions I asked you to write. 
+Do not add or remove data.
+Do not change the names of classes, functions, or data.
+
+
+Write a program that has these classes:
+=======================================
+class Vehicle
+Files: vehicle.h, vehicle.cpp
+Base class: Vehicle
+
+private data:
+color, owner both strings
+doors int
+count static int.
+
+count gets incremented in constructors 
+and decremented in the destructor of Vehicle only.
+count is not declared again in the subclasses.
+
+Public methods:
+default constructor Vehicle()
+constructor Vehicle(color_i, owner_i, doors_i)
+destructor ~Vehicle() virtual
+assignment operator  = (virtual if needed)
+
+overload friend operator << 
+No need to overload >>
+
+//color these virtual
+set(color_i, owner_i, doors_i)
+set(vehicle_i)
+setColor
+setOwner
+setDoors
+getColor
+getOwner
+getDoors
+
+static getCount
+
+operator == to check if two vehicles are equal (virtual if needed)
+check color, owner, and doors; if they are equal return true; 
+else return false
+
+=======================================
+class SUV
+Files: suv.h, suv.cpp
+Subclass SUV inherited from Vehicle (electric vehicle)
+
+Private data: one only
+mpg double //miles per gallon
+SUV does not have its own static count
+
+Public methods:
+default constructor SUV()
+constructor SUV(color_i, owner_i, doors_i, mpg_i)
+destructor ~SUV()
+assignment operator  =
+
+overload friend operator << 
+No need to overload >>
+
+set(color_i, owner_i, doors_i, mpg_i)
+set(suv_i)
+setMPG
+getMPG
+
+operator == to check if two suvs are equal 
+check color, owner, and doors; if they are equal, return true; 
+else return false
+
+=======================================
+class Crossover
+Files: crossover.h, crossover.cpp
+Subclass Crossover inherited from Vehicle
+
+Private data: one only
+mpg double
+
+Public methods:
+default constructor Crossover()
+constructor Crossover(color_i, owner_i, doors_i, mpg_i)
+destructor ~Crossover()
+assignment operator  =
+
+overload friend operator << 
+No need to overload >>
+
+set(color_i, owner_i, doors_i, mpg_i)
+set(crossover_i)
+setMPG
+getMPG
+
+operator == to check if two crossovers are equal 
+check color, owner, and doors; if they are equal return true; 
+else return false
+
+=======================================
+Write a main program vehicle_main.cpp
+include vehicle.h, suv.h, and crossover.h
+create a vector of va[10] of 10 vehicles of type Vehicle.
+Manually, set all objects in va[] from 0 to 9 with
+Vehicle objects for va[0], va[3], va[6], va[9]
+SUV objects for va[1], va[4], va[7]
+Crossover objects for va[2], va[5], va[8]
+
+Loop from 0 to 9 and print the vehicles using <<
+
+call
+setColor
+setOwner
+setDoors
+for all SUVs and Crossovers
+type to screen Color, Owner, and Doors for all SUVs, Crossovers
+using cout << and getColor, getOwner, and getDoors methods.
+
+Print to screen the static count using cout << and Vehicle::getCount()
+
+Check if any two va[1] and va[4] are equal using ==
+and print to screen the result.
+
+
+
+Q2: 10 points
+============
+Convert the V3d class in the given example to templates like we did with Complex in class.  Modify all the files.
+You can change the files names to v3dt.h and v3dt_main.cpp or leave them as is.
+
+Do not change the names of functions or data.
+Do not add new functions or data.
+
